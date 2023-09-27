@@ -131,7 +131,7 @@ links in the navigation are in the hover or focus state.*/
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
 :focus{
-  border: 2px solid black;
+  border: 2px solid black;  
 }
 
 
@@ -166,8 +166,15 @@ first div in the grid  and place it in the grid. */
     grid-template-columns: 1fr 5fr 1fr;
     gap: 15px;
   }
- 
+ .container img {
+    width: 100%;
+    max-height: 600px;
+    grid-column: 2 / span 1;
+     overflow: hidden; 
+ }
   .container div:first-child{
+    grid-column: 1/ -1;
+    /* column-span: all; */
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -175,14 +182,12 @@ first div in the grid  and place it in the grid. */
     background-size: cover;
     background-image: url("../images/header.jpg");
   }
-  
 
   .about-image, .method-image, .clients-image, .contact-image {
-    column-span: all;
+    width:100%;
     max-height: 600px;
     overflow: hidden; 
-    grid-column: 2/ span 1;
-
+    grid-column: 1 / -1;
   }
   .about, .method, .clients, .contact {
     grid-column: 2 / span 1;
@@ -210,8 +215,6 @@ first div in the grid  and place it in the grid. */
 
 @media screen and (min-width: 800px) {
  
-
-
   /* Step 9: Write the selector/rule property to style the nav element */
 nav {
   text-align: end;
@@ -224,6 +227,7 @@ nav {
   justify-items: auto;
   justify-content: center;
   grid-template-columns: 50px auto 500px auto 50px;
+  
 }
 
  
