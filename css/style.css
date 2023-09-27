@@ -174,7 +174,6 @@ first div in the grid  and place it in the grid. */
  }
   .container div:first-child{
     grid-column: 1/ -1;
-    /* column-span: all; */
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
