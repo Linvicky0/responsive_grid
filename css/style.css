@@ -126,7 +126,7 @@ links in the navigation are in the hover or focus state.*/
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip a:focus{
   position: absolute;
-  top: -0px;
+  top: 20px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -216,7 +216,7 @@ first div in the grid  and place it in the grid. */
  
   /* Step 9: Write the selector/rule property to style the nav element */
 nav {
-  text-align: end;
+  text-align: right;
   padding-top: 30px;
 }
  
